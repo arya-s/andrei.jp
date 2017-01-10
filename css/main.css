@@ -43,6 +43,10 @@ body {
   margin-right: 12px;
 }
 
+#reading a {
+  display: block;
+}
+
 @media (max-width: 768px) {
   body {
     padding: 24px 12px;
