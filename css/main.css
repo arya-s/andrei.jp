@@ -1,67 +1,78 @@
 body {
-  font-family: "Nunito Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start;
-  padding: 64px 32px;
-}
-
-.content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  max-width: 320px;
-  padding: 0 12px;
-  box-sizing: border-box;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 64px 32px;
+  padding: 64px 32px;
+  font-family: "Nunito Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 2.2em;
+  margin-bottom: 32px;
+}
+
+#social a, #reading a {
+  display: block;
+}
+
+#social a:not(:last-child) {
+  margin-right: 24px;
+}
+
+.content-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.content-box {
+  width: 300px;
 }
 
 .content-box:not(:last-child) {
   margin-right: 64px;
 }
 
-#social {
-  font-size: 1.8em;
-}
-
-#social a:not(:last-child) {
-  margin-right: 12px;
-}
-
-#reading a {
-  display: block;
+.content {
+  padding: 0 12px;
 }
 
 @media (max-width: 768px) {
   body {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
     padding: 24px 12px;
+  }
+
+  h2 {
+    margin-bottom: 1rem;
+  }
+
+  #social {
+    margin: 0 auto;
+    margin-bottom: 32px;
+  }
+
+  .content-wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
   }
 
-  .content {
-    max-width: none;
-    width: 100%;
-  }
-
-  .content-box:not(:last-child) {
+  .content-box {
     margin-right: 0;
     margin-bottom: 12px;
   }
