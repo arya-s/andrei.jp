@@ -10,8 +10,8 @@ body {
   -ms-flex-align: center;
   align-items: center;
   padding: 64px 32px;
-  padding: 64px 32px;
   font-family: "Nunito Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #f7fde0;
 }
 
 #social {
