@@ -47,6 +47,25 @@ body {
   padding: 0 12px;
 }
 
+.content p {
+  position: relative;
+  margin: 6px 0;
+}
+
+.ongoing:before {
+  visibility: hidden;
+  content: "\f3fd";
+  margin-right: 4px;
+  font-size: 18px;
+}
+
+.read:before {
+  font-size: 18px;
+  color: #16B831;
+  margin-right: 4px;
+  content: "\f3fd";
+}
+
 @media (max-width: 768px) {
   body {
     -webkit-box-align: start;
